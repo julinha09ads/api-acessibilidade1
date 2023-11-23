@@ -1,0 +1,389 @@
+body{
+    background: #020202;
+    font-family: 'League Spartan', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+button {
+  padding: 10px 20px;
+  background-color: blue;
+  color: white;
+  border-radius: 5px;
+}
+
+.botao-com-imagem {
+  width: 60px;
+  height: 90px;
+  border-radius: 50%;
+  background-image: url('./imgs/acessibilidade.png');
+  background-size: cover;
+  background-position: center;
+  border: none;
+  cursor: pointer;
+}
+.modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.7);
+  display: none;
+}
+
+.modal-content {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 400px;
+  height: 300px;
+  background-color: white;
+  border-radius: 5px;
+}
+
+.modal img {
+  width: 100px;
+  height: 100px; /* Altura máxima em relação à altura da viewport */
+}
+
+section {
+    width: 80%; /* Largura da seção em relação à largura do contêiner pai */
+    max-width: 1200px; /* Largura máxima da seção */
+    margin: 0 auto; /* Centraliza a seção no meio da página */
+    
+    padding: 40px; /* Espaçamento interno da seção */
+    text-align: center; /* Centralizar o texto dentro da seção */
+  }
+
+.output{
+  font-family: 'League Spartan', sans-serif;
+  font-style: italic;
+  
+}
+.meu-botao {
+    height: 50%;
+    margin-top: 50px;
+    padding: 10px 30px;
+    font-size: 16px;
+    font-weight: bold;
+    border: none;
+    border-radius: 20px;
+    background-color:  #F3BA39;
+    color: rgb(255, 255, 255);
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    display: inline-block;
+    margin-left: 200px;
+    text-decoration: none;
+}
+
+#ancoraCardapio{
+    text-decoration: none;
+    color: black;
+}
+
+.meu-botao:hover {
+    background-color: #cdc6b4;
+}
+
+.center{
+    
+
+    max-width: 5000px;
+    margin: 0 auto;
+    padding: 80px;
+}
+
+a:hover {
+  text-decoration: none; /* Remova sublinhado padrão no hover, se necessário */
+  color: #F3BA39; /* Cor do texto do link quando o mouse está sobre ele */
+}
+
+/* Adiciona o traço (underline) no hover */
+a:after {
+  content: '';
+  display: block;
+  width: 0;
+  height: 2px; 
+  background: #F3BA39; /* Cor do traço */
+  position: fixed;
+  top: 70px;
+  transition: width 0.3s; /* Adiciona uma transição suave */
+}
+
+a:hover::before{
+  width: 200px;
+
+}
+/* Aumenta a largura do traço no hover */
+#home:hover:after {
+  width: 80px;
+
+}
+
+.contato:hover::after{
+  width: 130px;
+}
+
+
+.menu{
+    width: 50%;
+    margin-left: 800px;
+    margin-top: -0px;
+    display: flex;
+    
+
+
+}
+
+.menu a{
+    color: #F3BA39;
+    text-decoration: none;
+    margin-left: 90px;
+    font-size: 30px;
+    top: -100px;
+    padding-left: 250px;
+    display: flex;
+    
+
+    
+}
+
+#meuHeader {
+ 
+ 
+  width: 100%;
+  background-color:  #F3BA39;;
+  color: #fff;
+  padding: 15px;
+  text-align: center;
+  transition: transform 0.3s ease-out;
+}
+
+#meuHeader.escondido {
+  transform: translateX(-100%);
+}
+
+
+img{
+
+    margin-left: 1050px;
+}
+
+.logo{
+    width: 275px;
+   left: -500px;
+   position: absolute;
+}
+
+.hamburguer{
+    margin-left: -200px;
+    margin-top: -420px;
+   
+    
+}
+
+.escrito{
+    color: white;
+    font-size: 40px;
+    position: relative;
+    top: 250px;
+    left: 50px;
+    position: absolute;
+  
+}
+
+button {
+    padding: 10px 20px;
+    background-color: white;
+    
+    color: white;
+    border-radius: 5px;
+    
+}
+
+
+
+h1 {
+    text-align: center;
+}
+
+p {
+    margin-top: 20px;
+}
+
+
+
+  .cards{
+    max-width: 1300px;
+    margin: 0 auto;
+    margin-top: 100px;
+}
+
+.card{
+    color: #ffffff ;
+    padding: 30px;
+    border-radius: 10px;
+    border: 1px solid#F3BA39;;
+}
+
+.card:not(:first-child){
+    margin-top: 20px;
+
+}
+
+
+.card p{
+    margin-top: 10px;
+    font-size: 20px;
+}
+.card--1 p{
+    line-height: 32px;
+
+}
+
+button{
+    margin-top: 20px;
+    padding: 20px 50px;
+    border: none;
+    outline: none;
+    font-size: 16px;
+    color: black;
+    border-radius: 5px;
+    background-color: gray;
+}
+
+
+
+header {
+    background-color: #F3BA39;
+    color: #fff;
+    padding: 15px;
+    text-align: center;
+  }
+
+
+  footer {
+    background-color: #F3BA39;
+    color: #fff;
+    padding: 20px 0;
+    text-align: center;
+  }
+
+  .footer-content {
+    display: flex;
+    justify-content: space-between;
+    max-width: 1200px;
+    margin: 0 auto;
+    flex-wrap: wrap;
+  }
+
+  .footer-section {
+    flex: 1 1 300px;
+    margin: 10px;
+    text-align: left;
+  }
+
+  .footer-section h3 {
+    color: #F3BA39;
+  }
+
+  .footer-section a {
+    color: #fff;
+    text-decoration: none;
+    transition: color 0.3s ease;
+  }
+
+  .footer-section a:hover {
+    color: #F3BA39;
+  }
+
+  .footer-social {
+    margin-top: 20px;
+  }
+
+  .social-icon {
+    font-size: 24px;
+    margin-right: 10px;
+    color: #fff;
+    text-decoration: none;
+    transition: color 0.3s ease;
+  }
+
+  .social-icon:hover {
+    color: #F3BA39;
+  }
+
+  .contact-info {
+    margin-top: 20px;
+  }
+
+  .contact-info p {
+    margin-bottom: 5px;
+  }
+
+  .contact-form {
+    margin-top: 20px;
+  }
+
+  .contact-form label,
+  .contact-form input,
+  .contact-form textarea,
+  .contact-form button {
+    display: block;
+    width: 100%;
+    margin-bottom: 10px;
+  }
+
+  .contact-form button {
+    background-color: #333;
+    color: #fff;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+
+  .contact-form button:hover {
+    background-color: #555;
+  }
+
+.endereço{
+    font-size: 25px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.tel{
+    font-size: 25px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.email{
+    font-size: 25px;    
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+
+  li {
+    background-color:  #F3BA39;
+    padding: 10px;
+    margin: 5px 0;
+    border-radius: 5px;
+    box-shadow: 0 1px 5px rgb(0, 0, 0);
+    transition: transform 0.3s ease-in-out;
+  }
+
+  li:hover {
+    transform: scale(1.05);
+  }
+  
+  .acessi{
+    position: absolute;
+    width: 50%;
+    left: -100%;
+    top:7%;
+    color: #F3BA39;
+  }
+  
